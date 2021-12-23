@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "premium_profiles",
+  "info": {
+    "name": "premium-profile"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

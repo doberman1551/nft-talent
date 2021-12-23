@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/premium-profiles",
+      "handler": "premium-profile.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/premium-profiles/count",
+      "handler": "premium-profile.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/premium-profiles/:id",
+      "handler": "premium-profile.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/premium-profiles",
+      "handler": "premium-profile.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/premium-profiles/:id",
+      "handler": "premium-profile.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/premium-profiles/:id",
+      "handler": "premium-profile.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

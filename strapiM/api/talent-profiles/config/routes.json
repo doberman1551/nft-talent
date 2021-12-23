@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/talent-profiles",
+      "handler": "talent-profiles.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/talent-profiles/count",
+      "handler": "talent-profiles.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/talent-profiles/:id",
+      "handler": "talent-profiles.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/talent-profiles",
+      "handler": "talent-profiles.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/talent-profiles/:id",
+      "handler": "talent-profiles.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/talent-profiles/:id",
+      "handler": "talent-profiles.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

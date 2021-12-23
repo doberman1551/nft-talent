@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "talent-profiles",
+  "info": {
+    "name": "Talent-Profiles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "talent_picture": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "skill_profile": {
+      "type": "enumeration",
+      "enum": [
+        "Developer",
+        "CM",
+        "Designer",
+        "Marketer"
+      ]
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "talent_profile"
+    }
+  }
+}
